@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to kokoa talk</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome to kokoa Clone</title>
 </head>
+
+
+
+
 <body>
-    <div id = "status-bar">
-          <div class ="status-bar__colum"> </div>
-           <span>No Service</span>
-           <!--to do : wifi icon-->
-          <div class ="status-bar__colum"> </div>
-           <span>18:43</span>
-          <div class ="status-bar__colum"> </div>
-           <span>110%</span>
-           <!--battery icon-->
-           <!--Lightning icon-->
-    </div>
+    <!--css칠때 class 처리하는듯?-->
+    <div class="status-bar">
+
+
+      <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fa-solid fa-wifi"></i>
+      </div>
+      <!--주석달기~ 여기는 와이파이아이콘-->
+
+
+
+      <div class="status-bar__column">
+          <span>18:43</span>
+      </div>
+
+
+      <div class="status-bar__column">
+          <span>110%</span>
+          <i class="fa-solid fa-battery-full fa-lg"></i>
+          <!--주석달기~ fa-lg 로 사이즈를 키움-->
+          <i class="fa-solid fa-bolt"></i>
+          <!--주석달기~ 여기는 배터리아이콘-->
+          <!--주석달기~ 여기는 번개아이콘-->
+      </div>
+
+  </div>
+
+<header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to Kokoa</h1>
+    <p class="welcome-header__text">
+      if you have a kokoa Account, log in with your email or phone number </p>
+</header>
+
+
+<form action="friends.html"method="get"id="login-form">
+        <input name="text"type="text" placeholder="Email or phon number"/>
+        <input name="password" type="password" placeholder="password"/>
+        <input type="submit" value="log-in"/>
+    
+</form>
+
+<a href="#"> 코코아톡 계정 혹은 비번 찾기</a>
+<script src="https://kit.fontawesome.com/440cb919d2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

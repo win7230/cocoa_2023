@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--link: 치면 완성되나 href 영역에 css 폴더 다시 명명해줘야함-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+
+
+
+<body>
+    <!--css칠때 class 처리하는듯?-->
+    <div class="status-bar">
+
+
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <!--주석달기~ 여기는 와이파이아이콘-->
+
+
+
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+
+
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <!--주석달기~ fa-lg 로 사이즈를 키움-->
+            <i class="fa-solid fa-bolt"></i>
+            <!--주석달기~ 여기는 배터리아이콘-->
+            <!--주석달기~ 여기는 번개아이콘-->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-cog fa-lg"></i></span>
+            <span class="badge2"></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+   
+    <!--nav>ui>li*4>a 엔터하면 아래 나옴-->
+    <!--컨트롤+D 같은 영역 같이 선택 -->
+    <main class="friends-screen-main">
+        <!--첫번째.... 내 프로필 나오는곳-->
+        <div class="user-component">
+            <!--.user-component_column*2 엔터 하면 아래 같은 두줄로 나옴-->
+            <div class="user-component__column">
+                <img src="https://blog.kakaocdn.net/dn/IS176/btrd3b2NHms/ffJV368S3rodwYHAVBBvI0/img.jpg"
+                    class="user-component__avatar user-component__avatar--xl" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">다미다미</h4>
+                    <h6 class="user-component__subtitle">안녕하세용구리</h6>
+                </div>
+            </div>
+            <div class="user-component__column"><i class="far fa-comment-alt fa-2x"></i></div></div>
+            <div class="icon-row">
+                <!--.icon-row_icon*4>span하고 엔터하면 4줄로 나옴 <div class="icon-row_icon"><span></span></div> -->
+                <div class="icon-row__icon"><i class="fas fa-qrcode"></i><span>QR Code</span></div>
+                <div class="icon-row__icon"><i class="far fa-address-book"></i><span>Add by Contents</span></div>
+                <div class="icon-row__icon"><i class="fas fa-fingerprint"></i><span>Add by ID</span></div>
+                <div class="icon-row__icon"><i class="far fa-envelope"></i><span>Invite</span></div>
+            </div>
+        </div>
+
+        <div id="no-mobile">
+        <span>Yore screen is too big</span>
+         </div>
+    <script src="https://kit.fontawesome.com/440cb919d2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

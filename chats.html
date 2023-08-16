@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+        <!--link: 치면 완성되나 href 영역에 css 폴더 다시 명명해줘야함-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoatalk</title>
+</head>
+
+
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+  
+        <div class="status-bar__column">
+          <span>18:43</span>
+        </div>
+  
+        <div class="status-bar__column">
+          <span>110%</span>
+          <i class="fas fa-solid fa-battery-full fa-lg"></i>
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+      </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">chats</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fas fa-comment-dots"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+
+  
+    <main class="main-screen">
+        <!--첫번째.... 내 프로필 나오는곳-->
+        <div class="user-component">
+            <!--.user-component_column*2 엔터 하면 아래 같은 두줄로 나옴-->
+            <div class="user-component__column">
+                <img src="https://blog.kakaocdn.net/dn/IS176/btrd3b2NHms/ffJV368S3rodwYHAVBBvI0/img.jpg"
+                    class="user-component__avatar user-component__avatar" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">다미다미</h4>
+                    <h6 class="user-component__subtitle">please check my kokoa account info</h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+        <div class="friend-screen__channel">
+            <h4 class="friend-screen__channel-header">Channel
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </h4>
+        </div>
+
+
+        <!--두번째.... 아마 친구들 프로필 나오는곳-->
+        <div class="user-component">
+            <!--.user-component_column*2 엔터 하면 아래 같은 두줄로 나옴-->
+            <div class="user-component__column">
+                <img src="https://mblogthumb-phinf.pstatic.net/MjAyMTAzMDJfMTk0/MDAxNjE0NjcwODM5ODMy.SoQANPRDmn9iG68wtTR7zgUl8VNY9PwzgeQxzW5FVbcg.eoORETPW_4Q0E0S1QXMmKMBjsn_ymRCrpiTsMOKlCh8g.JPEG.pooh930304/1614670785738.jpeg?type=w800"
+                    class="user-component__avatar user-component__avatar--sm" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title user-component__title--not--bold">Channel</h4>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span class user-component__time>21:22</span>
+                <div class="badge">1</div>
+                <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--nav>ui>li*4>a 엔터하면 아래 나옴-->
+    <!--컨트롤+D 같은 영역 같이 선택 -->
+    <nav class="nav">
+        <ui class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav_btn"><a class="nav_link" href="chats.html">
+                    <span class="nav_notification">1</span>
+                    <i class="fas fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="more.html">
+                    <span class="nav__notification2"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+        </ui>
+    </nav>
+
+
+    <script src="https://kit.fontawesome.com/440cb919d2.js" crossorigin="anonymous"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa clone</title>
+  </head>
+  
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+
+  <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+    <div class ="screen-header__icons">
+    <span><i class="fas fa-search fa-lg"></i></span>
+    <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+    <span><i class="fas fa-music fa-lg"></i></span>
+    <span><i class="fas fa-cog fa-lg"></i></span>
+  </header>
+
+
+
+<main class="main-screen">
+  <a href="chat.html">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img src="https://image.cnbcfm.com/api/v1/image/103978904-The_meme_formerly_known_as_Kuk_1.png" class="user-component__avatar user-component__avatar">
+          <div class ="user-component__text"> 
+            <h4 class="user-component__title">박정수</h4>
+            <h6 class="user-component__subtitle">최근에 보낸 메일 확인해주세요.</h6>
+          </div>
+      </div>
+      
+      <div class="user-component__column">
+        <span class="user-component__time">22:22</span>
+        <div class="badge">1</div>
+      </div> 
+    </div>
+  </a>
+</main>
+
+
+<main class="main-screen">
+  <div class="user-component">
+    <div class="user-component__column">
+      <img src="https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-articleLarge.jpg" class="user-component__avatar user-component__avatar">
+        <div class ="user-component__text"> 
+          <h4 class="user-component__title">우다미</h4>
+          <h6 class="user-component__subtitle">커피 타러가시죠.</h6>
+        </div>
+    </div>
+    
+    <div class="user-component__column">
+      <span class="user-component__time">22:22</span>
+      <div class="badge">1</div>
+    </div> 
+  </div>
+</main>
+
+
+<main class="main-screen">
+
+  <div class="user-component">
+    <div class="user-component__column">
+      <img src="https://play-lh.googleusercontent.com/ovFbGElmfBf5gqcNhKLDkNIMMf_54hJ02G6lNTQFYsmK4rqwBjKrbl24RiAPOLiVkdk=w240-h480-rw" class="user-component__avatar user-component__avatar">
+        <div class ="user-component__text"> 
+          <h4 class="user-component__title">이경주</h4>
+          <h6 class="user-component__subtitle">준호님, 이번주까지 자기소개서를 한 장짜리 PPT로 만들어주세요.</h6>
+        </div>
+    </div>
+    
+    <div class="user-component__column">
+      <span class="user-component__time">22:22</span>
+      <div class="badge">1</div>
+    </div> 
+  </div>
+</main>
+
+
+
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav_btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"> </i
+          ></a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+                <i class="fa-solid fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav__link" href="more.html"
+            ><i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+    <span>Yore screen is too big</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/440cb919d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
